@@ -1,0 +1,11 @@
+package com.cts.cda.ui;
+
+import javax.swing.JDialog;
+
+public class ContactFrame extends JDialog{
+
+	public ContactFrame() {
+		this.setTitle("Contact Details");
+		
+	}
+}

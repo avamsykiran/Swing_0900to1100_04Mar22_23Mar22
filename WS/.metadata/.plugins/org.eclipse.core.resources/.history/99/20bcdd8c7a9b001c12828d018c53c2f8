@@ -1,0 +1,10 @@
+package in.cts.fsa;
+
+public class FirstSwingApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
