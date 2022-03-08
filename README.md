@@ -46,6 +46,15 @@ Java Swing
 
         a layout controls how shall the components be arranged on the window.
 
+        java.awt.LayoutManager
+                    FlowLayout          is the defualt layout of JPanel
+                    BorderLayout        is the default layout of JFrame and JDialog
+                    CardLayout
+                    GridLayout
+                    BoxLayout
+                    SpringLayout
+                        ...etc
+
     Events
 
         a event is any thing that happens on a component. eg: clicking, moving mouse pointer,
