@@ -48,11 +48,11 @@ Java Swing
 
         java.awt.LayoutManager
                     FlowLayout          is the defualt layout of JPanel
-                    BorderLayout        is the default layout of JFrame and JDialog
-                    CardLayout
+                    BorderLayout        is the default layout of JFrame and JDialog                    
                     GridLayout
-                    BoxLayout
-                    SpringLayout
+                    BoxLayout                    
+                    GridBagLayout
+                    CardLayout
                         ...etc
 
     Events

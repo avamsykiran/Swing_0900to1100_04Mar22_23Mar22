@@ -47,10 +47,12 @@
 			<item value="in.cts"/>
 		</list>
 		<list key="name">
+			<item value="layouts-demo"/>
 			<item value="components-demo"/>
 			<item value="first-swing-app"/>
 		</list>
 		<list key="artifactId">
+			<item value="layouts-demo"/>
 			<item value="components-demo"/>
 			<item value="first-swing-app"/>
 		</list>
