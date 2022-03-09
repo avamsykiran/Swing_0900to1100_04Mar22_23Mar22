@@ -14,11 +14,11 @@ public class BorderLayoutDemo extends JDialog {
 		
 		//setLayout(new BorderLayout()); as the default is border layout
 		
-		add(new JButton("CENTER"));
-		add(new JButton("NORTH"),BorderLayout.NORTH);
-		add(new JButton("SOUTH"),BorderLayout.SOUTH);
-		add(new JButton("EAST"),BorderLayout.EAST);
-		add(new JButton("WEST"),BorderLayout.WEST);
+		add(new JButton("CENTER BTN"));
+		add(new JButton("NORTH BTN"),BorderLayout.NORTH);
+		add(new JButton("SOUTH BTN"),BorderLayout.SOUTH);
+		add(new JButton("EAST BTN"),BorderLayout.EAST);
+		add(new JButton("WEST BTN"),BorderLayout.WEST);
 		
 	}
 

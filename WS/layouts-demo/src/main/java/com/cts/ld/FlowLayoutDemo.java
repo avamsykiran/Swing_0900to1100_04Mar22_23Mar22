@@ -12,7 +12,7 @@ public class FlowLayoutDemo extends JDialog {
 		setBounds(50,50,500,500);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		
-		setLayout(new FlowLayout());
+		setLayout(new FlowLayout(FlowLayout.RIGHT));
 		
 		add(new JButton("ONE"));
 		add(new JButton("TWO"));

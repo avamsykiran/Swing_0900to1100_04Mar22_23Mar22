@@ -47,7 +47,7 @@ Java Swing
         a layout controls how shall the components be arranged on the window.
 
         java.awt.LayoutManager
-                    FlowLayout          is the defualt layout of JPanel
+                    FlowLayout          is the default layout of JPanel
                     BorderLayout        is the default layout of JFrame and JDialog                    
                     GridLayout
                     BoxLayout                    
