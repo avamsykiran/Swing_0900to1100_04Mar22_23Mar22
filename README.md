@@ -53,7 +53,16 @@ Java Swing
                     BoxLayout                    
                     GridBagLayout
                     CardLayout
+                    GroupLayout
+                    SpringLayout
                         ...etc
+
+        Create a Wizard for accepting the deaitls of a new recrutee....
+            firstPanel - collect personal details
+            secondPanel - collect his educational qualification details
+            thirdPanel - collect his experience details
+
+            buttonsPanel - prev button and a next button
 
     Events
 
