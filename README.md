@@ -88,4 +88,43 @@ Java Swing
         is a abastract class that implements a listener interface and overrides all
         those methodw with empty implementation.
 
-        
+    Model-View-Controller Archetecure
+    ---------------------------------------------------------------------------------
+
+        DB <--> [ DAO --entity-- Service --model-- Controller --model-- View ] <--> EndUser
+
+                                                                GUI-Swing               Web-Servlets/JSP
+        DAO         persistence Logic                           POJO                    POJO
+        Service     bussiness Logic                             POJO                    POJO
+        Controller  Application Flow Logic                      Listener/Adapter        Servlet
+        View        User Interaction (Presentation Logic)       JPanel/JFrame/JDialog   JSP
+
+        Entity      Represents Database Data                    POJO                    POJO
+        Model       Represents the Visual Data                  Swing Model             POJO
+
+    Adding external libraries like (sajdbc.jar) to maven
+    ----------------------------------------------------------------------------------
+            
+            You may create local repository on your project
+
+            For example if you have libs folder in project structure
+
+            In libs folder you should create directory structure like: /groupId/artifactId/version/artifactId-version.jar
+
+            In your pom.xml you should register repository
+
+            <repository>
+                <id>ProjectRepo</id>
+                <name>ProjectRepo</name>
+                <url>file://${project.basedir}/libs</url>
+            </repository>
+            and add dependency as usual
+
+            <dependency>
+                <groupId>groupId</groupId>
+                <artifactId>artifactId</artifactId>
+                <version>version</version>
+            </dependency>
+
+            for more info refer :  https://web.archive.org/web/20130801071744/http://charlie.cu.cc/2012/06/how-add-external-libraries-maven/
+           
