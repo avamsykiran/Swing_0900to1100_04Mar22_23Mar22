@@ -26,7 +26,16 @@
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
 <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.cts.bta.dao.Connector"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="com.cts.bta.exceptions.BTAException"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.cts.bta.entities.AccountHolder"/>
+<fullyQualifiedTypeName name="com.cts.bta.dao.AccountHolderDao"/>
+<fullyQualifiedTypeName name="com.cts.bta.dao.AccountHolderDaoImpl"/>
 </qualifiedTypeNameHistroy>

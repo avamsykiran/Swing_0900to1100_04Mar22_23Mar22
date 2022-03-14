@@ -1,9 +1,0 @@
-package com.cts.cda;
-
-public class ComponentsDemoApplication {
-
-	public static void main(String[] args) {
-
-	}
-
-}

@@ -107,7 +107,7 @@ Java Swing
             
             You may create local repository on your project
 
-            For example if you have libs folder in project structure
+            For example if you have lib folder in project structure
 
             In libs folder you should create directory structure like: /groupId/artifactId/version/artifactId-version.jar
 
