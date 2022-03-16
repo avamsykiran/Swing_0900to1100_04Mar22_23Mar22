@@ -1,7 +1,15 @@
 package com.cts.bta.ui;
 
+import java.awt.Container;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+
+import javax.swing.JComponent;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class AccountHolderDialog extends JDialog {
 
@@ -11,5 +19,7 @@ public class AccountHolderDialog extends JDialog {
 		setTitle("AccountHolder");
 		setLocationRelativeTo(parent);
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		
 	}
+	
 }

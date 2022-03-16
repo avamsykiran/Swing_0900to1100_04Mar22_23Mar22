@@ -1,11 +1,16 @@
 package com.cts.bta.ui;
 
+import java.awt.BorderLayout;
+
+import javax.swing.Box;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.border.EmptyBorder;
 
 import com.cts.bta.controller.HomeFrameController;
 import com.cts.bta.model.AccountHolderTableModel;
@@ -22,8 +27,11 @@ public class HomeFrame extends JFrame {
 		setLocationRelativeTo(null);
 		
 		createMenuBar();
+		JPanel tablePanel = new JPanel(new BorderLayout());
 		table = new JTable(new AccountHolderTableModel());
-		add(new JScrollPane(table));
+		tablePanel.setBorder(new EmptyBorder(10, 10, 10, 10));
+		tablePanel.add(new JScrollPane(table));
+		add(tablePanel);
 	}
 	
 	private void createMenuBar() {
