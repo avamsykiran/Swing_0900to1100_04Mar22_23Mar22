@@ -40,4 +40,10 @@ public class AccountHolderServiceImpl implements AccountHolderService{
 		ahDao.deleteById(id);
 	}
 
+	@Override
+	public Long nextAccountHolderId() throws BTAException {
+		Long maxId = ahDao.maxAccountHolderId();
+		return maxId==null?1:maxId+1;
+	}
+
 }

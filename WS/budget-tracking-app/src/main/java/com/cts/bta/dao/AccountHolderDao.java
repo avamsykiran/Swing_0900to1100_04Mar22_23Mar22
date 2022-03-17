@@ -11,4 +11,5 @@ public interface AccountHolderDao {
 	AccountHolder add(AccountHolder entity) throws BTAException;
 	AccountHolder modify(AccountHolder entity) throws BTAException;
 	void deleteById(Long id) throws BTAException;
+	Long maxAccountHolderId() throws BTAException;
 }

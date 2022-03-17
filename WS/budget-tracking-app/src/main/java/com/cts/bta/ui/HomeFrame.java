@@ -19,8 +19,12 @@ public class HomeFrame extends JFrame {
 
 	JTable table;
 	HomeFrameController ctrl;
+	
 	public HomeFrame(HomeFrameController ctrl) {
 		this.ctrl=ctrl;
+	}
+	
+	public void init() {
 		setTitle("Budget Tracking Application");
 		setSize(500,400);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);

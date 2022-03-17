@@ -12,5 +12,5 @@ public interface AccountHolderService {
 	AccountHolder add(AccountHolder entity) throws BTAException;
 	AccountHolder modify(AccountHolder entity) throws BTAException;
 	void deleteById(Long id) throws BTAException;
-
+	Long nextAccountHolderId() throws BTAException;
 }
