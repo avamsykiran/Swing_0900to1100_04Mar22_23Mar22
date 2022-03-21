@@ -19,6 +19,8 @@ public class HomeFrame extends JFrame {
 
 	JTable table;
 	HomeFrameController ctrl;
+	JMenuItem editMenu;
+	JMenuItem deleteMenu;
 	
 	public HomeFrame(HomeFrameController ctrl) {
 		this.ctrl=ctrl;
@@ -33,6 +35,9 @@ public class HomeFrame extends JFrame {
 		createMenuBar();
 		JPanel tablePanel = new JPanel(new BorderLayout());
 		table = new JTable(new AccountHolderTableModel());
+		table.setCellSelectionEnabled(false);
+		table.setRowSelectionAllowed(true);
+		table.getSelectionModel().addListSelectionListener(ctrl);
 		tablePanel.setBorder(new EmptyBorder(10, 10, 10, 10));
 		tablePanel.add(new JScrollPane(table));
 		add(tablePanel);
@@ -44,6 +49,13 @@ public class HomeFrame extends JFrame {
 		
 		JMenu mFile = menubar.add(new JMenu("AccountHolder"));
 		mFile.add(new JMenuItem("New")).addActionListener(ctrl);
+		editMenu = new JMenuItem("Edit");
+		editMenu.setEnabled(false);
+		mFile.add(editMenu).addActionListener(ctrl);
+		deleteMenu = new JMenuItem("Delete");
+		deleteMenu.setEnabled(false);
+		mFile.add(deleteMenu).addActionListener(ctrl);
+		mFile.addSeparator();
 		mFile.add(new JMenuItem("Refresh")).addActionListener(ctrl);
 		mFile.addSeparator();
 		mFile.add(new JMenuItem("Exit")).addActionListener(ctrl);
@@ -55,5 +67,10 @@ public class HomeFrame extends JFrame {
 	
 	public AccountHolderTableModel getTableModel() {
 		return (AccountHolderTableModel) this.table.getModel();
+	}
+	
+	public void enableEditAndDelete(boolean enableFlag) {
+		editMenu.setEnabled(enableFlag);
+		deleteMenu.setEnabled(enableFlag);
 	}
 }

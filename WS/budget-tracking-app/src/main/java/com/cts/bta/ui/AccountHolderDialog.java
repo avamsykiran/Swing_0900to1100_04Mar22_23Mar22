@@ -31,14 +31,15 @@ public class AccountHolderDialog extends JDialog {
 	
 	public AccountHolderDialog(JFrame parent,AccountHolderDialogController ctrl) {
 		super(parent,true);
-		this.ctrl=ctrl;
-		setLocationRelativeTo(parent);
-	}
-	
-	public void init() {
 		setSize(400,300);
 		setTitle("AccountHolder");
 		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setLocationRelativeTo(parent);
+		this.ctrl=ctrl;
+	}
+	
+	public void init() {
+		
 		
 		JPanel pCenter = new JPanel(new GridBagLayout());
 		pCenter.setBorder(new EmptyBorder(5, 5, 5, 5));
