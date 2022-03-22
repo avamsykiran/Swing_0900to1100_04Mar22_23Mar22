@@ -128,3 +128,15 @@ Java Swing
 
             for more info refer :  https://web.archive.org/web/20130801071744/http://charlie.cu.cc/2012/06/how-add-external-libraries-maven/
            
+
+    SwingWorker
+    -------------------------------------------------------------------------------------------
+
+        CurrentThread           the main thread on which the app is launched
+        Execution Thread        takes up the responsibility of event detection handling
+        Worker Thread           is used to perform any time-consuming operations.
+
+        SwingWorker is an abstract class that does a time-consuming operation on a backgroun worker thead
+        and provides methods to make inter-thread communication easy.
+
+        

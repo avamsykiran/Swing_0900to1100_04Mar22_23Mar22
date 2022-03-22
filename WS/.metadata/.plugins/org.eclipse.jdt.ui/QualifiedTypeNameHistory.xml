@@ -52,5 +52,6 @@
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="com.cts.bta.controller.AccountHolderDialogController"/>
 <fullyQualifiedTypeName name="com.cts.bta.entities.AccountHolder"/>
+<fullyQualifiedTypeName name="javax.swing.event.ListSelectionListener"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>
